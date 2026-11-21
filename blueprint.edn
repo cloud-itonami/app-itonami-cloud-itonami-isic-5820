@@ -1,0 +1,19 @@
+{:itonami.blueprint/id "cloud-itonami-isic-5820"
+ :itonami.blueprint/name "Governed CRM and Subscription-Commerce Pipeline Actor"
+ :itonami.blueprint/isic-rev5 "5820"
+ :itonami.blueprint/domain :software/crm-subscription-commerce
+ :itonami.blueprint/license "AGPL-3.0"
+ :itonami.blueprint/social-impact [:revenue-recognition-integrity :entitlement-fairness :pipeline-honesty]
+ :itonami.blueprint/governor :subscription-governor
+ :itonami.blueprint/robotics false
+ :itonami.blueprint/required-technologies [:identity :audit-ledger]
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/implemented-slice
+ "RevOps-LLM sealed advisor wrapped by an independent SubscriptionGovernor
+ (src/crm/policy.cljk: discount-authority-gate, entitlement-scope-gate,
+ stage-sequence-gate, double-close-gate, lead-status-gate,
+ lead-convertible-gate, source-provenance-gate), a langgraph StateGraph
+ (src/crm/operation.cljk) and an append-only audit ledger. Revenue
+ recognition is straight-line ASC 606 / IFRS 15 via kotoba-lang/crm.
+ Classification follows the repository name (ISIC Rev.4 5820 in the
+ README)."}
