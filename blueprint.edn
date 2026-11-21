@@ -1,6 +1,6 @@
 {:itonami.blueprint/id "cloud-itonami-isic-5820"
  :itonami.blueprint/name "Governed CRM and Subscription-Commerce Pipeline Actor"
- :itonami.blueprint/isic-rev5 "5820"
+ :itonami.blueprint/isic-rev4 "5820"
  :itonami.blueprint/domain :software/crm-subscription-commerce
  :itonami.blueprint/license "AGPL-3.0"
  :itonami.blueprint/social-impact [:revenue-recognition-integrity :entitlement-fairness :pipeline-honesty]
